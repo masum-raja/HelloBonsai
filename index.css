@@ -1,0 +1,159 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+#upperblock{
+    width: 100%;
+    
+}
+#uppersubblock{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid red; */
+}
+#shapeblue{
+    
+    /* top: -88%; */
+  
+    width: 90vw;
+    height: 80vw;
+
+    position: absolute;
+
+    /* top: 0; */
+    /* right: auto; */
+    bottom: auto;
+    z-index: -1;
+    display: block;
+    width: 56vw;
+     /* width: 60%; */
+
+    height: 56vw;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    -webkit-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    transform: rotate(-23deg);
+
+    top: -40%;
+    right: 9%;
+
+    display: block;
+    
+ 
+}
+#text1{
+   width: 50%;
+   height: 100%;
+   /* border: 1px solid black; */
+}
+#image1{
+    width: 50%;
+   height: 100%;
+   /* border: 1px solid black; */
+   width: 50%;
+}
+#texteverything>h1{
+    /* font-family: 'Amerigo-bt roman opt',sans-serif; */
+    font-family: 'Amerigo-bt roman opt';
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.75rem;
+    line-height: 130%;
+    color: #4c525a;
+    font-weight: lighter;
+    
+}
+#text1div{
+    /* border: 1px solid red; */
+    width: 65%;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+#nexttoeverything{
+    font-family: 'Proximanova opt',sans-serif;
+    color: #4c525a;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#email{
+    border: 3px solid #00b289;
+    padding:30px;
+    width: 55%;
+    border-radius: 5px;
+}
+#startfree{
+    border: 3px solid #00b289;
+    background-color: #00b289;
+    color: white;
+    width: 30%;
+    padding:30px;
+    border-radius: 0 5px 5px 0;
+    margin-left: -7px;
+    
+}
+#firstimage{
+    width: 90%;
+    margin-top: 15%;
+    margin-left: 9%;
+}
+
+ /* second div */
+
+ /* #shapebluesecond{
+
+ } */
+ #makemore{
+    font-family: 'Amerigo-bt roman opt';
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 130%;
+    color: #4c525a;
+    font-weight: lighter;
+    text-align: center;
+    color: #4c525a;
+ }
+ #integratetext{
+    font-family: 'Proximanova opt',sans-serif;
+    color: #4c525a;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    font-weight: lighter;
+    
+ }
+
+ #secondbox_imagediv{
+    display: flex;
+ }
+ #sbid_1{
+    width: 50%;
+
+ }
+ #sbid_2{
+    width: 50%;
+ }
+
+ .imgbox>h2{
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ #imgbox1{
+   margin-left: 20%;
+ }
+ #imgbox2{
+    margin-left: 15%;
+ }
+ #blueshap2{
+    position: absolute;
+    z-index: -1;
+ }
+ 
+
+
