@@ -1,0 +1,50 @@
+#footer{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    font-family: 'Proximanova opt',sans-serif;
+    margin-top: 50px;
+  }
+  
+  #footer>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #footer p{
+    color: #4c4d5f;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: .12px;
+    margin-bottom: 20px;
+  }
+  
+  #footer a{
+    margin-bottom: 1px;
+    color: #4c4d5f;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: .11px;
+    text-decoration: none;
+  }
+  #Templates{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-arrow{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid rgb(82, 80, 80);
+    border-right: 2px solid rgb(82, 80, 80);
+    transform: rotate(135deg);
+    margin-top: 7px;
+    margin-left: 9px;
+  }
