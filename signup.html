@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_Up Page</title>
+
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      #container{
+        border: 1px solid;
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        margin-top: 8%;
+      }
+
+      #left_div{
+        /* border: 1px solid rgb(235, 23, 23); */
+      }
+
+      #right_div{
+        /* border: 1px solid rgb(15, 55, 200); */
+      }
+      #right_div>div{
+        /* border: 1px solid rgb(23, 226, 26); */
+      }
+      form{
+        display: grid;
+        /* grid-template-rows: repeat(2,80px); */
+        gap: 10px;
+        padding: 5%;
+      }
+
+      input{
+        height: 30px;
+        width: 90%;
+       padding: 5px;
+       margin: auto;
+      }
+      select{
+        height: 45px;
+        width: 90%;
+      }
+      button{
+        height: 40px;
+        width: 90%;
+        border: 1px solid #00b289;
+        background-color:#fff;
+      }
+
+      #middle{
+        /* border: 1px solid rgb(0, 21, 255); */
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+      }
+      #abc>input{
+        margin: auto;
+      }
+      #country{
+        /* border: 1px solid green; */
+        height: 80px;
+        width: 200%;
+   
+      }
+
+      #currency{
+        /* border: 1px solid yellow; */
+        width: 90%;
+      }
+
+      p{
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+    </style>
+
+</head>
+<body>
+     
+    <div id="container">
+
+        <div id="left_div">
+            <div id="top">
+                <img src="https://app.hellobonsai.com/assets/logos/bonsai-0fe7c417d79806408d8117d5a0ca871f0be3afb1104d54b53f59f53cbda2f28b.svg" alt="">
+                <p>Join 500,000+ freelancers and agencies using Bonsai.</p>
+            </div>
+             
+            <div id="bottom"> 
+                <p>Anyone doing #freelance work should use @bonsaiinc for contracts/payment. It's amazing and saves boatloads of time.</p>
+                <p>Nathanael Smith, Product Designer</p>
+            </div>
+            
+        </div>
+
+
+        <div id="right_div">
+          <h1>Try Bonsai free with your Workflow today</h1>
+
+            <form action="">
+
+                <div id="abc">
+                    <input type="text" id="google" placeholder="Sign Up with Google">
+                </div>
+
+            <div id="abc">
+                <p>Email</p>
+                <input type="email" id="email" placeholder="your@email.com">
+            </div>
+            
+            <div id="abc">
+                <p>FULL NAME</p>
+                <input type="text" id="name" placeholder="Jane Smith">
+            </div>
+            
+            <div id="abc">
+                <p>PASSWORD</p>
+                <input type="password" id="password" placeholder="••••••••••••" >
+                <p class="form-field-hint">Your password must be at least 6 characters</p>
+               
+            </div>
+           
+
+          <div id="middle">
+
+            <div id="country">
+            <p>Country</p>
+            <select name="" id="countrys">
+                <option value="">India</option>
+                <option value="">United States</option>
+                <option value="">United Kingdom</option>
+                <option value="">France</option>
+                <option value="">Australia</option>
+                <option value="">Germany</option>
+            </select>
+        </div>
+
+          <div id="currency">
+            <p>Currency</p>
+            <select name="" id="currencys">
+                <option value="">INR</option>
+                <option value="">USD</option>
+                <option value="">GBP</option>
+                <option value="">CHF</option>
+                <option value="">AUD</option>
+                <option value="">EUR</option>
+            </select>
+          </div>
+        
+        </div>
+
+        <div id="term"> 
+            <p  style="text-align: center;">By creating an account, you accept our</p>
+            <a style="color:black ;" href="/terms" target="_blank">Terms and Conditions</a>
+        </div>
+       
+        <div id="btn">
+            <button type="submit" style="color: #fff; background-color: #00b289; ">Create Free Account</button>
+        </div>
+
+        <div class="login_divider">
+            <div  style="text-align: center;">  Already have an account?  <hr> <br></div>
+            <button><a style="color: #00b289; " href="./sign_in">Login</a></button>
+            </div>
+
+        </form>
+
+       </div>
+    
+    </div>
+
+</body>
+</html>
