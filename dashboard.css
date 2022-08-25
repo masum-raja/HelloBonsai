@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main:first-child{
+    margin-top: 20px;
+}
+
+
+#top{
+    display: grid;
+    grid-template-columns: 18% 82%;
+}
+#top>div{
+    border: 1px solid gray; 
+}
+
+
+#logo img{
+    width: 130px;
+    margin-right: 18px;
+}
+
+.main img{
+    width: 32px;
+}
+
+#plus{
+    color: #00b289;
+    width: 40px;
+}
+
+#plus>h1{
+    text-align: center;
+    border: 2px solid rgba(0,178,137,.5);
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+
+.main p{
+    color: #292a2d;
+    opacity: .75;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#logout button{
+    background-color: #00b289;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+    width: 90px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#timer{
+    border: 1px solid gray;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+#name{
+display: flex;
+gap: 40px;
+line-height: 1.8;
+align-items: center;
+height: 250px;
+margin-left: 50px;
+
+}
+
+#bill{
+    border: 1px solid gray;
+    height: 270px;
+}
