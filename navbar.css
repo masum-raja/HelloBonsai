@@ -170,18 +170,22 @@ nav button:last-child:hover {
   padding: 0 20px;
 }
 
-.mobile-icon{
-  width: 40px;
-  height: 40px;
-  color: #4c4d5f;
+.mobile_nav_btn{
   display: none;
   background: transparent;
   cursor: pointer;
 }
 
+.mobile-icon{
+  width: 40px;
+  height: 40px;
+  color: #4c4d5f;
+}
+
 .mobile-icon[name="close-outline"]{
 display: none;
 }
+
 
 #das{
   display: none;
@@ -192,6 +196,27 @@ display: none;
 
   .mobile-icon{
     display: block;
+=======
+.header{
+  display: none;
+}
+
+#mobile_nav{
+display: none;
+}
+
+
+@media(max-width:1000px){
+  #dropdown,#btn{
+    opacity: 0;
+    visibility: hidden;
+
+  }
+
+  .mobile_nav_btn{
+    display: block;
+    z-index: 999;
+    right: 0;
   }
 
   #btn,#dropdown{
