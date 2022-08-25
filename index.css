@@ -1,6 +1,7 @@
 *{
     margin: 0 ;
     padding: 0;
+    box-sizing: border-box;
 }
 #upperblock{
     width: 100%;
@@ -43,6 +44,7 @@
     
  
 }
+
 #text1{
    width: 50%;
    height: 100%;
@@ -102,9 +104,7 @@
 
  /* second div */
 
- /* #shapebluesecond{
 
- } */
  #makemore{
     font-family: 'Amerigo-bt roman opt';
     margin-top: 0;
@@ -154,6 +154,334 @@
     position: absolute;
     z-index: -1;
  }
+
+ /* third div */
+
+ #creamshape1{
+    top: 28%;
+    z-index: -1;
+
+    position: absolute;
+    left: 57%;
+    top: 240%;
+    z-index: -1;
+    /* width: 80%; */
+    width: 40%;
+    height: 90%;
+    border-radius: 94px;
+    background-color: #fff5e8;
+    /* -webkit-transform: rotate(-21deg);
+    -ms-transform: rotate(-21deg); */
+    transform: rotate(-21deg);
+ }
+ #thirdone{
+    display: flex;
+    margin-top: 150px;
+ }
+ #buttondiv{
+    width: 45%;
+    /* border: 1px solid black; */
+    height: 47vw ;
+ }
+ #textimagediv{
+    width: 55%;
+    /* border:1px solid black; */
+    height: 47vw;
+ }
+
+ #textimagediv>h2{
+    font-family: 'Amerigo-bt roman opt';
+    font-weight: 400;
+    font-size: 2rem;
+    color: #4c525a;
+ }
+ #btdt{
+    color: #4c525a;
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    width: 50%;
+    /* border: 1px solid red; */
+    font-family: 'Proximanova opt',sans-serif;
+    margin-bottom: 30px;
+    
+    
+ }
+ #exploreproposal{
+    display: flex;
+    text-decoration: none;
+    color: #00b289;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    
+ }
+
+ #proposalimage{
+    width: 70%;
+    margin-left: 100px;
+ }
+ #mainbtn{
+    width: 60%;
+    height: 600px;
+    
+    margin-left: 20%;
+ }
+ .btnflex{
+    display: flex;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding: 20px; 
+    border-radius: 5px;
+    color: #4c525a;
+ }
+
+ .btnflex:hover{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding: 20px; 
+ }
+
+ .btncontent{
+    margin-left: 20px;
+    margin-top: 5px;
+    
+ }
+ .btncontent>h4{
+   font-weight: bold;
+   font-size: 22px;
+   width: 200%;
+   
+ }
+ #imagetwoo{
+    margin-top: 1px;
+    margin-left: 55%;
+ }
+
+ /* trusted text start from here */
+
+ #trustedtext{
+   /* border: 1px solid red; */
+   width: 100%;
+   height: auto;
+ }
+ #maintrustedtext{
+   text-align: center;
+   width: 48%;
+   /* border: 1px solid red; */
+   margin-left: 25%;
+
+ }
+ #maintrustedtext>h1{
+   font-family: 'Amerigo-bt roman opt';
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 2.75rem;
+   line-height: 130%;
+   color: #4c525a;
+   font-weight: lighter;
+ }
+ #belowtrustedtext{
+   text-align: center;
+   width: 40%;
+   /* border: 1px solid red; */
+   margin-left: 28%;
+ }
+ #belowtrustedtext>div{
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 1.5rem;
+   line-height: 120%;
+   color: #4c525a;
+   font-weight: 300;
+   font-family: 'Proximanova opt';
+ }
+ .shape-four{
+   position: absolute;
+    top: 400%;
+    right: 80%;
+    z-index: -1;
+    width: 80%;
+    height: 85%;
+    border-radius: 94px;
+    background-color: #f2faff;
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+
+ }
+ #builtbox{
+   display: flex;
+   width: 65%;
+   height: 20rem;
+   /* border: 1px solid red; */
+   margin-left: 25%;
+   margin-top: 10%;
+ }
+ #bb1{
+   width: 50%;
+   /* border: 1px solid black; */
+   height: 100%;
+ }
+
+ #bb2{
+   width: 50%;
+   /* border: 1px solid black; */
+   height: 100%;
+ }
+
+ .buildtext{
+   margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: 'Proximanova opt',sans-serif;
+    color: #4c525a;
+ }
+ .buildtextbelow{
+   font-size: 1rem;
+   font-weight: 100;
+   text-align: left;
+   line-height: 25px;
+   font-family: 'Proximanova opt',sans-serif;
+   color: #4c525a;
+   width: 60%;
+ }
+
+ #justtake{
+   font-family: 'Amerigo-bt roman opt';
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 2rem;
+   line-height: 130%;
+   color: #4c525a;
+   font-weight: lighter;
+ }
+
+ #reviewbox{
+   /* display: flex;
+   width: 70%;
+   margin: auto; */
+
+   font-family: "ProximaNova-Regular", sans-serif;
+
+   width: 70%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 25px;
+  
+ }
+
+ /* review section */
+
+ #image_1,
+#image_2 {
+  margin-top: 150px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-bottom: 50px;
+}
+
+.image_div {
+   display: flex;
+   margin-top: -80px;
+ }
+ .review_images > img {
+   border-top-right-radius: 25%;
+   border-bottom-left-radius: 25%;
+   width: 80%;
+   height: 100%;
+ }
+ .icon_img {
+   margin-top: -120px;
+   flex-direction: column;
+   align-self: flex-end;
+   padding-left: 10px;
+ }
+
+ .review_content {
+   padding: 10px 30px;
+ }
+
+ .review_content > h4 {
+   font-size: 20px;
+   color: #4c525a;
+   line-height: 36px;
+ }
+
+ /* green div */
+ #ctadiv{
+   position: relative;
+    z-index: 1;
+    padding: 3rem 2rem;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    border-radius: 8px;
+    background-color: #f2faff;
+    
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 170px;
+ }
+ #flexleft{
+   width: 70%;
+   text-align: center;
+   /* border: 1px solid red; */
+   margin: auto;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   
+ }
+ #lasttext{
+   font-family: 'Amerigo-bt roman opt';
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 2.75rem;
+   line-height: 130%;
+   text-align: center;
+   color: #4c525a;
+   font-weight: 400;
+   width: 60%;
+ }
+ #greentext{
+   font-family: 'Amerigo-bt roman opt';
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 2.75rem;
+   line-height: 130%;
+   text-align: center;
+   color: #01b289;
+   font-weight: 400;
+ }
+#btnmain{
+   color: white;
+   background-color: #00b289;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 25px;
+   padding-bottom: 20px;
+   margin: 20px;
+   border-radius: 7px;
+   text-decoration: none;
+   font-size: 15px;
+}
+#margin{
+   margin-top: 200px;
+}
+
+
+ 
+
  
 
 
