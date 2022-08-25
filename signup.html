@@ -1,186 +1,343 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign_Up Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Sign_Up Page</title>
 
-    <style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* font-family: "Amerigo BT", sans-serif; */
+      font-family: "ProximaNova-Regular", sans-serif;
+      box-sizing: border-box;
+    }
 
-      *{
-        margin: 0;
-        padding: 0;
-      }
+    #container {
+      border: 1px solid rgb(173, 167, 167);
+      width: 55%;
+      height: auto;
+      display: flex;
+      margin: auto;
+      margin-top: 8%;
+      border-radius: 1%;
+    }
 
-      #container{
-        border: 1px solid;
-        width: 80%;
-        height: auto;
-        display: flex;
-        margin: auto;
-        margin-top: 8%;
-      }
+    #left_div {
+      background-image: url("https://app.hellobonsai.com/assets/signup/signup-panel-bg-d7dcdb0bac806bc05a740e6bd59c62439a7102882f57320e8ab25b40393f1b75.png");
+      border: 1px solid rgb(222, 215, 215);
+      display: grid;
+      grid-template-rows: repeat(2, 200px);
+      grid-gap: 30rem;
+      width: 36%;
+      border-bottom-left-radius: 1%;
+      border-top-left-radius: 1%;
+    }
 
-      #left_div{
-        /* border: 1px solid rgb(235, 23, 23); */
-      }
+    #top {
+      margin-left: 40px;
+      margin-top: 80px;
+      width: 230px;
+    }
 
-      #right_div{
-        /* border: 1px solid rgb(15, 55, 200); */
-      }
-      #right_div>div{
-        /* border: 1px solid rgb(23, 226, 26); */
-      }
-      form{
-        display: grid;
-        /* grid-template-rows: repeat(2,80px); */
-        gap: 10px;
-        padding: 5%;
-      }
+    #bottom {
+      margin-left: 40px;
+      margin-top: 80px;
+      width: 220px;
+      font-size: 14px;
+      line-height: 1.428571429;
+      color: #292a2d;
+    }
 
-      input{
-        height: 30px;
-        width: 90%;
-       padding: 5px;
-       margin: auto;
-      }
-      select{
-        height: 45px;
-        width: 90%;
-      }
-      button{
-        height: 40px;
-        width: 90%;
-        border: 1px solid #00b289;
-        background-color:#fff;
-      }
+    #right_div {
+      margin: auto;
+      width: 57%;
+    }
 
-      #middle{
-        /* border: 1px solid rgb(0, 21, 255); */
-        margin: auto;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-      }
-      #abc>input{
-        margin: auto;
-      }
-      #country{
-        /* border: 1px solid green; */
-        height: 80px;
-        width: 200%;
-   
-      }
+    #heading {
+      margin-top: 50px;
+      margin-left: 50px;
+      width: 400px;
+    }
 
-      #currency{
-        /* border: 1px solid yellow; */
-        width: 90%;
-      }
+    form {
+      display: grid;
+      gap: 10px;
+      padding: 10%;
+    }
 
-      p{
-        margin-top: 10px;
-        margin-bottom: 5px;
-      }
+    #btn_google {
+      display: flex;
+      border: 1px solid rgb(222, 215, 215);
+      height: 50px;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
 
-    </style>
+    #btn_google>div {
+      margin: auto;
+    }
+
+    hr {
+      width: 365px;
+    }
+
+    #btn_google>div>img {
+      width: 14%;
+    }
+
+    .title {
+      font-size: 12px;
+      color: #878787;
+      letter-spacing: .075em;
+      font-weight: 500;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 97%;
+      padding: 15px;
+      border: 1px solid rgb(222, 215, 215);
+      font-size: 15px;
+      border-radius: 4px;
+    }
+
+    #middle {
+      margin: auto;
+      width: 100%;
+      display: flex;
+      column-gap: 12px;
+    }
+
+    #country {
+      width: 80%;
+    }
+
+    #currency {
+      width: 45%;
+    }
+
+    select {
+      height: 45px;
+      width: 90%;
+      font-size: 15px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 1px solid rgb(222, 215, 215);
+    }
+
+    button {
+      height: 40px;
+      width: 98%;
+      border: 1px solid #00b289;
+      background-color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    #term {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .already {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #878989;
+      margin: auto;
+      margin-bottom: -7px;
+      width: 300px;
+
+    }
+
+    .login_divider {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    #footer {
+      width: 56%;
+      margin: auto;
+      margin-top: 70px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    i {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    #footer_top {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.428571429;
+      color: #929494;
+      font-weight: 500;
+    }
+
+    #footer_bottom {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 1.428571429;
+      font-weight: 300;
+      color: #ccd0d2;
+    }
+
+
+  </style>
 
 </head>
-<body>
-     
-    <div id="container">
 
-        <div id="left_div">
-            <div id="top">
-                <img src="https://app.hellobonsai.com/assets/logos/bonsai-0fe7c417d79806408d8117d5a0ca871f0be3afb1104d54b53f59f53cbda2f28b.svg" alt="">
-                <p>Join 500,000+ freelancers and agencies using Bonsai.</p>
+<body>
+
+  <div id="container">
+
+    <div id="left_div">
+      <div id="top">
+        <img
+          src="https://app.hellobonsai.com/assets/logos/bonsai-0fe7c417d79806408d8117d5a0ca871f0be3afb1104d54b53f59f53cbda2f28b.svg"
+          alt="">
+        <p style="margin-top: 8px;">Join 500,000+ freelancers and agencies using Bonsai.</p>
+      </div>
+
+      <div id="bottom">
+        <svg class="signup-page-cp-quote-icon" width="22" height="16" viewBox="0 0 22 16" fill="none">
+          <path d="M20.4582 3.2C18.1262 3.36 16.1387 4.82667 15.1847 6.85333H18.2057C19.4512 6.85333 20.4847 7.86667 20.4847 9.14667V13.7067C20.4847 14.96 19.4777 16 18.2057 16H13.6212C12.3756 16 11.3421 14.9867 11.3421 
+                13.7067V9.14667C11.3421 4.10667 15.4232 0 20.4317 0C20.4317 0 21.3328 0 21.3328 0.906667C21.3328 0.906667 21.3328 1.06667 21.3328 2.26667C21.3593 3.2 20.4582 3.2 
+                20.4582 3.2ZM9.08961 3.2C6.75758 3.36 4.77006 4.82667 3.81605 6.85333H6.83708C8.0826 6.85333 9.11611 7.86667 9.11611 9.14667V13.7067C9.11611 14.96 8.1091 16 6.83708 
+                16H2.27903C1.03351 16 0 14.9867 0 13.7067V9.14667C0 4.10667 4.08105 0 9.08961 0C9.08961 0 9.99062 0 9.99062 0.906667C9.99062 0.906667 9.99062 1.06667 9.99062 
+                2.26667C9.99062 3.2 9.08961 3.2 9.08961 3.2Z" fill="#00b289"></path>
+        </svg>
+        <p style="margin-top: 12px; font-size: 12px; font-style: italic;color: #292a2d;">Anyone doing #freelance work should use @bonsaiinc for contracts/payment. It's amazing and saves boatloads of
+          time.</p>
+        <p style="font-size: 10px; color: #878989;margin-top: 5px; ">Nathanael Smith, Product Designer</p>
+      </div>
+
+    </div>
+
+
+    <div id="right_div">
+
+      <div id="heading">
+        <h1>Try Bonsai free with your Workflow today</h1>
+      </div>
+
+
+      <form action="">
+
+        <button id="btn_google">
+            <div><img src="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1"
+                alt=""></div>
+            <div style="margin-right: 80px; margin-left: -100px; width:310px">
+              <p>Sign Up with Google</p>
             </div>
-             
-            <div id="bottom"> 
-                <p>Anyone doing #freelance work should use @bonsaiinc for contracts/payment. It's amazing and saves boatloads of time.</p>
-                <p>Nathanael Smith, Product Designer</p>
-            </div>
-            
+        </button>
+
+        <p class="already" style="  margin-bottom: -16px; "> or  <hr></p>
+       
+        <div>
+          <p class="title">EMAIL</p>
+          <input type="email" id="email" placeholder="your@email.com">
+        </div>
+
+        <div>
+          <p class="title">FULL NAME</p>
+          <input type="text" id="name" placeholder="Jane Smith">
+        </div>
+
+        <div>
+          <p class="title">PASSWORD</p>
+          <input type="password" id="password" placeholder="••••••••••••">
+          <p style="color: #aaa; font-size: 12px;margin: 7px 0 0;">Your password must be at least 6 characters</p>
         </div>
 
 
-        <div id="right_div">
-          <h1>Try Bonsai free with your Workflow today</h1>
-
-            <form action="">
-
-                <div id="abc">
-                    <input type="text" id="google" placeholder="Sign Up with Google">
-                </div>
-
-            <div id="abc">
-                <p>Email</p>
-                <input type="email" id="email" placeholder="your@email.com">
-            </div>
-            
-            <div id="abc">
-                <p>FULL NAME</p>
-                <input type="text" id="name" placeholder="Jane Smith">
-            </div>
-            
-            <div id="abc">
-                <p>PASSWORD</p>
-                <input type="password" id="password" placeholder="••••••••••••" >
-                <p class="form-field-hint">Your password must be at least 6 characters</p>
-               
-            </div>
-           
-
-          <div id="middle">
+        <div id="middle">
 
             <div id="country">
-            <p>Country</p>
-            <select name="" id="countrys">
-                <option value="">India</option>
-                <option value="">United States</option>
-                <option value="">United Kingdom</option>
-                <option value="">France</option>
-                <option value="">Australia</option>
-                <option value="">Germany</option>
-            </select>
-        </div>
+               <p class="title">COUNTRY</p>
+                <select name="">
+                  <option value=""> India </option>
+                  <option value="">United States</option>
+                  <option value="">United Kingdom</option>
+                  <option value="">France</option>
+                  <option value="">Australia</option>
+                  <option value="">Germany</option>
+                </select>
+            </div>
 
           <div id="currency">
-            <p>Currency</p>
-            <select name="" id="currencys">
-                <option value="">INR</option>
+            <p class="title">CURRENCY</p>
+              <select name="">
+                <option value=""> INR </option>
                 <option value="">USD</option>
                 <option value="">GBP</option>
                 <option value="">CHF</option>
                 <option value="">AUD</option>
                 <option value="">EUR</option>
-            </select>
+              </select>
           </div>
-        
+
         </div>
 
-        <div id="term"> 
-            <p  style="text-align: center;">By creating an account, you accept our</p>
-            <a style="color:black ;" href="/terms" target="_blank">Terms and Conditions</a>
+        <div id="term">
+          <p style="color: #878989;font-size: 12px; font-weight: 500;">By creating an account, you accept our</p>
+          <a style="color: #454747; font-size: 12px; font-weight: 500;  " href="/terms">Terms and Conditions</a>
         </div>
-       
+
         <div id="btn">
-            <button type="submit" style="color: #fff; background-color: #00b289; ">Create Free Account</button>
+          <button type="submit" href="./signin.html" style="color: #fff; background-color: #00b289; ">Create Free
+            Account</button>
         </div>
 
         <div class="login_divider">
-            <div  style="text-align: center;">  Already have an account?  <hr> <br></div>
-            <button><a style="color: #00b289; " href="./sign_in">Login</a></button>
-            </div>
+          <p class="already"> Already have an account? <hr> </p>
+          <button style="margin-top: 30px ; margin-bottom: -15px;"><a style="color: #00b289; " href="./signin.html">Login</a></button>
+        </div>
 
-        </form>
+      </form>
 
-       </div>
-    
     </div>
+
+   </div>
+
+    <div id="footer">
+      <div id="footer_top">
+        <a>Contact Us </a>
+        <samp><i class="fa-solid fa-circle "></i> </samp>
+        <a>Help Center </a>
+        <samp><i class="fa-solid fa-circle "></i> </samp>
+        <a>About Us</a>
+        <samp><i class="fa-solid fa-circle "></i> </samp>
+        <a>Plans & Pricing</a>
+        <samp><i class="fa-solid fa-circle "></i> </samp>
+        <a>Privacy policy</a>
+      </div>
+
+    <div id="footer_bottom">
+      <div>
+        ©2022 Bonsai Technologies Inc — Payments, banking, and issuing services are provided by
+        <a style="color: #ccd0d2;" target="_blank" href="https://www.stripe.com">Stripe Payments Company</a>, Evolve
+        Bank &amp; Trust (Member FDIC), and Celtic Bank (Member FDIC), respectively. Bonsai is not a law firm, and does
+        not provide legal services, advice, or representation.&nbsp;&nbsp;
+        <a style="color: #ccd0d2;" href="https://app.hellobonsai.com/terms">Terms</a>
+        &nbsp;&nbsp;
+        <a style="color: #ccd0d2;" href="https://www.hellobonsai.com/credits">Credits</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
+
+<script>
+
+</script>
