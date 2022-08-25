@@ -154,6 +154,7 @@ nav button:last-child:hover {
   background-color: #0d9676;
 }
 
+
 .arrow {
   position: absolute;
   width: 8px;
@@ -185,6 +186,17 @@ nav button:last-child:hover {
 display: none;
 }
 
+
+#das{
+  display: none;
+}
+
+
+@media(max-width:1000px){
+
+  .mobile-icon{
+    display: block;
+=======
 .header{
   display: none;
 }
@@ -207,4 +219,8 @@ display: none;
     right: 0;
   }
 
+  #btn,#dropdown{
+    opacity: 0;
+    visibility: hidden;
+  }
 }
