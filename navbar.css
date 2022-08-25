@@ -169,37 +169,42 @@ nav button:last-child:hover {
   padding: 0 20px;
 }
 
+.mobile_nav_btn{
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 .mobile-icon{
   width: 40px;
   height: 40px;
   color: #4c4d5f;
-  display: none;
-  background: transparent;
-  cursor: pointer;
 }
 
 .mobile-icon[name="close-outline"]{
 display: none;
 }
 
+.header{
+  display: none;
+}
+
+#mobile_nav{
+display: none;
+}
+
 
 @media(max-width:1000px){
+  #dropdown,#btn{
+    opacity: 0;
+    visibility: hidden;
 
-.mobile-icon{
-  display: block;
-  margin-left: 500px;
-  z-index: 999;
-}
+  }
 
-#logo img{
-  width: 120px;
-}
-
-#dropdown,#btn{
-  display: none;
-  margin-left: 0px;
-  width: 100%;
-  height: 100vh;
-}
+  .mobile_nav_btn{
+    display: block;
+    z-index: 999;
+    right: 0;
+  }
 
 }
