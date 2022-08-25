@@ -1,0 +1,257 @@
+body
+{
+margin: 0PX;
+font-family: 'Proximanova opt',sans-serif;
+color: #4c525a;
+font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+}
+#navbar
+{
+	height: 55px;
+	width: 100%;
+	border: 1px solid blue;
+}
+#top_section{
+
+display: block;
+overflow: hidden;
+width: 100%;
+margin: auto;
+
+}
+.main_part{
+	padding-top: 110px;
+   padding-bottom: 40px;
+   position: relative;
+}
+
+/*.blue_shape._12{
+top: -88%;
+right: -23%;
+width: 90%;
+height: 120%;
+}
+.blue_shape{
+position: absolute;
+ left: 0;
+  bottom: auto;
+  z-index: -1;
+  display: block;
+  border-radius: 6.6vw;
+  background-color: #f2faff;
+  transform: rotate(-23deg);
+}*/
+.top1.pad {
+	position: relative;
+    z-index: 2;
+}
+.pad{
+padding-right: 2.5rem;
+padding-left: 2.5rem;
+}
+.cont{
+width: 100%;
+max-width: 70rem;
+margin-right: auto;
+margin-left: auto;
+}
+.pricing{
+display: flex;
+width: 100%;
+margin-top: 4%;
+margin-bottom: -25px;
+padding-bottom: -25px;
+margin-right: auto;
+margin-left: auto;
+padding-right: 0;
+-webkit-box-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+align-items: center;
+position: relative;
+max-width: 36rem;
+}
+.heading{
+	font-weight: 400;
+	font-family: 'Amerigo-bt roman opt',sans-serif;
+	font-size: 2.5rem;
+line-height: 120%;
+}
+#togglebtn{
+	position: relative;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+#Month{
+	font-size: 17px;
+font-weight: 600;
+letter-spacing: 1.22px;
+}
+#year{
+	position: relative;
+    z-index: 2;
+   opacity: .65;
+   color: #4c4d5f;
+   font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.22px;
+}
+img{
+	display: inline-block;
+	position: absolute;
+   left: auto;
+   right: -9%;
+   bottom: 15;
+   margin-bottom: 50px;
+}
+.switch{
+	position: relative;
+	display: inline-block;
+	width: 47px;
+	height: 27px;
+
+}
+.switch input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*background-color: #ccc;*/
+	background-color:rgb(46,139,87)
+;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.slider:before{
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+input:checked + .slider{
+	background-color: rgb(46,139,87);
+}
+input:focus + .slider{
+	box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before{
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(20px);
+
+
+}
+.slider.round{
+border-radius: 34px;
+}
+.slider.round:before{
+	border-radius: 50%;
+}
+
+.card_part{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	margin-top: -10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+  
+}
+.card_part>div{
+	border: .3px solid rgba(2,4,69,.15);
+	background-color: #fbfcff;
+	box-shadow: 0 0 68px 0 rgba(2,4,69,.08);
+	border-radius: 4px;
+	padding: 15% 10%;
+}
+.card_head{
+	font-weight: 600;
+	font-size: 1.625rem;
+line-height: 1.4;
+}
+.cardp{
+	max-width: 90%;
+}
+.card1{
+width: 100%;
+margin-top: 20px;
+border-bottom: 2px solid #01b289;
+}
+.card1_2{
+	display: flex;
+-webkit-box-align: end;
+align-items: flex-end;
+font-size: 62px;
+line-height: 72px;
+font-weight: 600;
+}
+.doller{
+position: relative;
+top: 10px;
+margin-right: 10px;
+align-self: flex-start;
+font-size: 30px;
+line-height: 28px;
+font-weight: 400;
+}
+.card1_2_month{
+	font-weight: 400;
+	font-size: 1.625rem;
+   line-height: 1.4;
+   margin: .9375rem;
+}
+.halfcard{
+	margin-bottom: 25px;
+padding-top: 40px;
+}
+.para{
+display: flex;
+padding-bottom: 18px;
+-webkit-box-align: center;
+align-items: center;
+color: #4c4d5f;
+font-size: 16px;
+line-height: 23px;
+}
+.paraimg{
+	margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+margin: .625rem;
+display: inline-block;
+max-width: 100%;
+
+}
+
+.startbtn{
+width: 80%;
+padding: 22px 25px;
+border-radius: 4px;
+background-color: #00b289;
+font-weight: 700;
+text-align: center;
+letter-spacing: .7px;
+text-decoration: none;
+display: inline-block;
+color: #fff;
+border: 0;
+line-height: inherit;
+cursor: pointer;
+}
