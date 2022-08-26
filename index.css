@@ -130,14 +130,10 @@
  }
 
  #secondbox_imagediv{
-    display: flex;
- }
- #sbid_1{
-    width: 50%;
-
- }
- #sbid_2{
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: auto
  }
 
  .imgbox>h2{
@@ -166,7 +162,7 @@
     top: 240%;
     z-index: -1;
     /* width: 80%; */
-    width: 40%;
+    width: 36%;
     height: 90%;
     border-radius: 94px;
     background-color: #fff5e8;
@@ -218,7 +214,7 @@
     
  }
 
- #proposalimage{
+ #proposalimage>img{
     width: 70%;
     margin-left: 100px;
  }
@@ -253,10 +249,13 @@
    width: 200%;
    
  }
- #imagetwoo{
+ .imagetwoo{
     margin-top: 1px;
     margin-left: 55%;
+    opacity: 0;
  }
+
+
 
  /* trusted text start from here */
 
@@ -480,6 +479,351 @@
 }
 
 
+/* responsiveness */
+
+@media all and (min-width:600px) and (max-width:1000px){
+  #email{
+    border: 3px solid #00b289;
+    padding:15px;
+    width: 110px;
+    border-radius: 5px;
+    
+}
+#startfree{
+    border: 3px solid #00b289;
+    background-color: #00b289;
+    color: white;
+    width: 80px;
+    padding:15px;
+    border-radius: 0 5px 5px 0;
+    /* margin-left: -7px; */
+    font-size: 13px;
+    
+}
+
+#secondbox_imagediv{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   width: 90%;
+   margin: auto;
+   gap: 20px;
+}
+
+#imgbox2{
+   width: 100%;
+   margin: auto;
+}
+#imgbox1{
+   width: 100%;
+   margin: auto;
+}
+
+.btnflex{
+   display: flex;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+   border-radius: 5px;
+   color: #4c525a;
+   align-items: center;
+   width: 200px;
+}
+
+#buttondiv{
+   height: auto;
+}
+
+.btnflex h4{
+   font-size: 14px;
+   margin-left: -10px;
+}
+#thirddiv{
+   width: 95%;
+   margin: auto;
+   margin-top: 30px;
+   height: auto;
+}
+.btnflex img{
+   width: 25px;
+}
+
+#thirdone{
+   display: flex;
+   gap:20px;
+   margin-top: 0px;
+
+}
+
+.btnflex:hover{
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+#trustedtext{
+   width: 90%;
+   margin: auto;
+   margin-top: 50px;
+ }
+
+ #justtake{
+   margin-top: 130px;
+ }
+
+ #ctadiv{
+ width: 90%;
+ margin: auto;
+ height: 100px;
+ margin-top: 40px;
+ }
+
+ #flexleft{
+height: auto;
+margin-top:-48px;
+width: 100%;
+ }
+
+ #lasttext,#greentext{
+   font-size: 22px;
+   text-align: center;
+   margin-top: 20px;
+ }
+
+ #btnmain{
+   height: 20px;
+   text-align: center;
+   padding-bottom:40px;
+ }
+}
+
+
+@media all and (min-width:280px) and (max-width:599px){
+   #email{
+     border: 3px solid #00b289;
+     padding:20px;
+     width: 180px;
+     border-radius: 5px;
+     
+ }
+ #startfree{
+     border: 3px solid #00b289;
+     background-color: #00b289;
+     color: white;
+     width: 130px;
+     padding:20px;
+     border-radius: 0 5px 5px 0;
+     font-size: 13.5px;
+     
+ }
+
+ #secondblock{
+   width: 90%;
+   margin: auto;
+   margin-top: -100px;
+ }
+ 
+ #secondbox_imagediv{
+    display: grid;
+   grid-template-columns: repeat(1,1fr);
+   grid-template-rows: repeat(2,1fr);
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+ }
+ 
+ #imgbox2{
+    width: 100%;
+    margin: auto;
+ }
+ #imgbox1{
+    width: 100%;
+    margin: auto;
+ }
+ 
+ .btnflex{
+    display: flex;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5px;
+    color: #4c525a;
+    align-items: center;
+    width: 200px;
+ }
+ 
+ #buttondiv{
+    height: auto;
+ }
+ 
+ .btnflex h4{
+    font-size: 14px;
+    margin-left: -10px;
+ }
+ #thirddiv{
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    height: auto;
+    
+ }
+ .btnflex img{
+    width: 25px;
+ }
+ #secondblock{
+   margin-top: 100px;
+ }
+ 
+ #thirdone{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas:
+    "b"
+    "a" ;
+    height: auto;
+ 
+ }
+
+ #textimagediv{
+   grid-area: a;
+   width: 90%;
+   margin: auto;
+ }
+
+ #textimagediv h2{
+   font-size: 22px;
+ }
+
+ #proposalimage{
+   width: 80%;
+   margin: auto;
+ }
+
+ #proposalimage img{
+   width: 100%;
+   margin: auto;
+ }
+
+ #btdt{
+   font-size: 16px;
+ }
+
+ #buttondiv{
+   grid-area: b;
+ }
+ 
+ .btnflex:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+ }
+ 
+ #trustedtext{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-top: 500px;
+  }
+ 
+  #justtake{
+    margin-top: 330px;
+  }
+ 
+  #ctadiv{
+  width: 90%;
+  margin: auto;
+  height: 200px;
+  margin-left: 60PX;
+  margin-top: 40px;
+  }
+ 
+  #flexleft{
+ height: auto;
+ margin-top:-48px;
+ width: 100%;
+  }
+ 
+  #lasttext,#greentext{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #buttondiv{
+   border: 1px solid black;
+   width: 100%;
+  }
+ 
+  #btnmain{
+    height: 20px;
+    text-align: center;
+    padding-bottom:40px;
+  }
+
+  #uppersubblock{
+   display: grid;
+   margin-bottom: -150px;
+   grid-template-rows: repeat(2,1fr);
+   grid-template-areas:
+   "fm"
+    "txt" ;
+   
+  }
+  #image1{
+   grid-area: fm;
+   width: 90%;
+   margin: auto;
+  }
+  #firstimage{
+   width: 100%;
+  }
+  #text1{
+   grid-area: txt;
+   width: 98%;
+   margin: auto;
+   margin-top: 10px;
+
+  }
+
+  #text1div{
+   display: grid;
+   grid-template-rows: repeat(3,1fr);
+   grid-template-columns: repeat(1,1fr);
+   width: 80%;
+   margin: auto;
+  }
+  #texteverything h1{
+   width:100%;
+   font-size: 35px;
+  }
+  #nexttoeverything{
+   font-size: 16px;
+  }
+
+  #inputpart{
+   width: 100%;
+  }
+
+  #integratetext{
+   width: 95%;
+   margin: auto;
+   text-align: center;
+   margin-top: 10px;
+   font-size: 16px;
+  }
+
+  #trustedtext{
+   width: 90%;
+   margin: auto;
+   border: 1px solid red;
+   margin-top: 250px;
+  }
+
+ #maintrustedtext{
+   border: 1px solid black;
+   width: 100%;
+   margin: auto;
+ }
+
+ #belowtrustedtext{
+   width: 100%;
+   margin: auto;
+ }
+
+ }
+ 
  
 
  
