@@ -1,7 +1,7 @@
 body
 {
-margin: -10PX;
-margin-right: -10px;
+margin: 0px;
+margin-right: 70px;
 font-family: 'Proximanova opt',sans-serif;
 color: #4c525a;
 font-size: 14px;
@@ -177,6 +177,22 @@ border-radius: 34px;
 	grid-gap: 15px;
   
 }
+.yearly_part{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	margin-top: -10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+}
+.yearly_part>div{
+	border: .3px solid rgba(2,4,69,.15);
+	background-color: #fbfcff;
+	box-shadow: 0 0 68px 0 rgba(2,4,69,.08);
+	border-radius: 4px;
+	padding: 15% 10%;
+}
 .card_part>div{
 	border: .3px solid rgba(2,4,69,.15);
 	background-color: #fbfcff;
@@ -193,7 +209,7 @@ line-height: 1.4;
 	max-width: 90%;
 }
 #cardp1{
-	width: 70%;
+	width: 75%;
 }
 .card1{
 width: 100%;
@@ -242,14 +258,15 @@ letter-spacing: 1px;
 padding: 8px 20px;
 width: 170px;
 
-/*background-color: #01b289;
-*/
+background-color: #01b289;
+
 
 
 
 }
 .para{
 display: flex;
+
 padding-bottom: 18px;
 -webkit-box-align: center;
 align-items: center;
@@ -260,17 +277,20 @@ line-height: 23px;
 .paraimg{
 margin-top: 0;
 margin-bottom: 0;
-margin-left: 0;
+margin-left: -15px;
+display: inline-block;
 margin: .625rem;
-
+position: relative;
 
 }
 .para img{
 border: 0;
-display: inline-block;
+/*display: inline-block;*/
 max-width: 100%;
 }
-
+.para div{
+	margin-left: 40px;
+}
 .startbtn{
 width: 80%;
 padding: 22px 25px;
@@ -287,13 +307,19 @@ line-height: inherit;
 cursor: pointer;
 }
 #parabtn{
-	margin-top: 90px;
+	margin-top: 110px;
+	margin-bottom: 35px;
 }
 #parabtn1{
 	margin-top: 135px;
+	margin-bottom: 32px;
 }
 #mid_part{
 	width: 100%;
+	margin: 5rem;
+}
+#mid_part1_2{
+		width: 100%;
 	margin: 5rem;
 }
 .mid_head{
@@ -305,10 +331,10 @@ cursor: pointer;
 	font-weight: 400;
 	text-align: center;
 	font-size: 2rem;
-    line-height: 140%;
+  line-height: 140%;
 }
 .box_part{
-	width: 80%;
+width: 80%;
 margin-bottom: 10px;
 padding: 10px 40px 5px;
 display: flex;
@@ -326,6 +352,7 @@ max-width: 600px;
 .coll{
 	  font-weight: 600;
 	  line-height: 1.4;
+	  font-size: 20px;
 }
 .bocpara{
 	font-weight: 300;
@@ -358,7 +385,16 @@ font-weight: 400;
 .img2{
 	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) ;
 	transform-style:preserve-3d ;
-	width: 6;
+	
+/*position: relative;*/
+position: relative;
+top: 6px;
+margin-left: -45px;
+display: inline-block;
+max-width: 100%;
+
+color: #00b289;
+cursor: pointer;
 }
 .box2{
 	padding-top: 40px;
@@ -443,6 +479,9 @@ margin-bottom: 10px;
 font-family: 'Proximanova opt',sans-serif;
 color: #4c525a;
 font-weight: 700;
+}
+.que1:hover{
+	color:#00b289 ;
 }
 .ans{
 	margin-right: 9%;
