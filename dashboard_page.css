@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: proxima nova,helvetica neue,helvetica,arial,sans-serif;
 }
 .main{
     display: flex;
@@ -19,6 +20,7 @@
 }
 #top>div{
     border: 1px solid gray; 
+    border-left: none;
 }
 
 
@@ -61,10 +63,14 @@
     margin-bottom: 10px;
 }
 
-#timer{
+#timer_main{
     border: 1px solid gray;
+    border-left: none;
     height: 70px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #name{
@@ -79,5 +85,97 @@ margin-left: 50px;
 
 #bill{
     border: 1px solid gray;
-    height: 270px;
+    border-bottom: none;
+    border-left: none;
+    height: auto;
 }
+
+  #right_top_section {
+    margin-right: 50px;
+  }
+
+  #maindiv{
+    border: 1px solid red;
+  }
+
+  #right_top_section button:first-child{
+    width: 130px;
+    height: 35px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00b289;
+    color: #ffff;
+  }
+
+  #right_top_section button:nth-child(2){
+    width: 80px;
+    height: 35px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #ffff;
+  }
+
+
+  #timer {
+    color: black;
+    background-color: transparent;
+    width: 120px;
+    height: 38px;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid gray;
+  }
+  #time_tracking_form {
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    opacity: 0;
+    visibility: hidden;
+    padding-bottom: 20px;
+    background-color: white; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px 60px;
+  }
+
+  #search {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    margin-left: 2px;
+    border: 1px solid gray;
+  }
+  th,
+  td {
+    padding: 5px 50px;
+    text-align: center;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid rgb(201, 197, 197);
+    border-top: none;
+    border-collapse: collapse;
+    width: 100%;
+  } 
+
+  #form input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  #form label {
+    font-size: 20px;
+  }
+
+  #day{
+    font-size: 22px;
+    color: #4d4d4d;
+  }
+
+  #mssg{
+    color: #4d4d4d;
+  }

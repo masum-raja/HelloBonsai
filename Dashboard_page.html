@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="dashboard_page.css" />
   </head>
   <body>
     <div id="top">
@@ -152,20 +152,70 @@
 
 
       <div class="split_dis" id="timer_name">
-        <div id="timer"></div>
+        <div id="timer_main">
+                <div id="left_top_section">
+                  <input id="search" type="text" placeholder="Search" /><i
+                    class="fa-solid fa-microphone"
+                  ></i>
+                </div>
+                <div id="right_top_section">
+                  <button>Start Free Trial</button>
+                  <button onclick="reset()">Stop</button>
+                  <button id="timer" onclick="startstop()">00:00:00</button>
+                </div>
+                <div id="time_tracking_form">
+                  <form action="" id="form">
+                    <label for="">Project</label>
+                    <br />
+                    <input type="text" id="project" placeholder="Project name" />
+                    <br />
+                    <br />
+                    <label for="">Task</label>
+                    <br />
+                    <input type="text" placeholder="Enter Task Detail" id="task" />
+                    <br />
+                    <br />
+                    <label for="">Date</label>
+                    <br />
+                    <input type="date" name="" id="date" />
+                    <br />
+                    <br />
+                    <label for="">Rate</label>
+                    <br />
+                    <input type="number" name="" id="rate" placeholder="50.00/hr" />
+                    <br />
+                    <br />
+                    <input type="submit" name="" id="submit" />
+                  </form>
+                </div>
+        </div>
         <div id="name">
-            <div>
-                <img src="https://app.hellobonsai.com/packs/static/good-afternoon-b0990cefb6300b05f216.svg" alt="">
+            <div id="img">
+                
             </div>
             <div>
                 <h1 id="day"></h1>
-                <h1>Good afternoon, Masum!</h1>
+                <h1 id="mssg"></h1>
             </div>
         </div>
-        <div id="bill"></div>
+        <div id="bill">
+            <table>
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th>Task Name</th>
+                  <th>Start Date</th>
+                  <th>Rate</th>
+                  <th>Time</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+        </div>
       </div>
     </div>
   </body>
 </html>
 
-<script src="Dashboard.js"></script>
+<script src="Dashboard_page.js"></script>
