@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit invoice</title>
+    <link rel="stylesheet" href="invoice_edit.css" />
+  </head>
+  <body>
+    <div id="send_div">
+      <button id="send_now">Send Now</button>
+    </div>
+
+    <div id="main-div">
+      <div id="top-section">
+        <h4
+          id="invoice_num"
+          style="display: flex; justify-content: flex-end; margin-top: 0px"
+        ></h4>
+        <div>
+          <h1 id="invoice_name">Invoice</h1>
+        </div>
+      </div>
+      <hr />
+      <div id="mid-section">
+        <div id="left-mid-section">
+          <div>
+            <p>FROM</p>
+            <input type="text" id="sender-name" />
+            <br />
+            <input
+              type="text"
+              id="sender-company"
+              placeholder="Your Company, LLC"
+            />
+            <br />
+            <input
+              type="text"
+              name=""
+              id="Sender-address"
+              placeholder="Your Address"
+            />
+            <br />
+            <h4 id="sender-email" style="font-weight: 540"></h4>
+          </div>
+          <div id="sender-date">
+            <h4 style="font-weight: 100">ISSUED ON</h4>
+           
+            <h4></h4>
+          </div>
+        </div>
+        <div id="right-mid-section">
+          <div>
+            <p>TO</p>
+            <input type="text" id="client-name" />
+            <br />
+            <input
+              type="text"
+              id="client-company"
+              placeholder="Client Company,LLC"
+            />
+            <br />
+            <input
+              type="text"
+              name=""
+              id="client-address"
+              placeholder="Client Address"
+            />
+            <br />
+            <h4 id="client-email" style="font-weight: 540"></h4>
+          </div>
+         
+          <div>
+            <h4 style="font-weight: 100">DUE Date</h4>
+            <h4 id="due-date"></h4>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="second-mid-section">
+        <h3 id="project-name" style="padding-left: 30px;"></h3>
+        <div id="item-details">
+          <div>
+            <h4>ITEM NAME</h4>
+            <input
+              type="text"
+              name=""
+              id="item-name"
+              placeholder="Example Item"
+            />
+          </div>
+          <div>
+            <h4>UNITS</h4>
+            <input
+              type="text"
+              id="unit"
+              class="pricing"
+              oninput="calculatetotal()"
+            />
+          </div>
+          <div>
+            <h4>RATE (INR)</h4>
+            <input
+              type="number"
+              id="rate_item"
+              class="pricing"
+              oninput="calculatetotal()"
+            />
+          </div>
+          <div>
+            <h4>TOTAL</h4>
+            <h4 id="total"></h4>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="third-mid-section">
+        <div>
+          <h4>Subtotal</h4>
+          <h4 id="subtotal"></h4>
+        </div>
+        <div>
+          <div style="display: flex">
+            <input
+              type="number"
+              id="tax"
+              class="pricing"
+              oninput="calculatetotal()"
+              style="height: 20px; width: 40px"
+            />
+            <h4 style="margin-top: 4px">% Tax</h4>
+          </div>
+          <div id="total-tax">
+            <h4 id="total-tax"></h4>
+          </div>
+        </div>
+        <hr  />
+        <div>
+          <h4>Total Amount</h4>
+          <h4 id="total-amount"></h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="invoice_edit.js"></script>

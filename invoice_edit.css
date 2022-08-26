@@ -1,0 +1,49 @@
+#main-div {
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+  }
+  #mid-section {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #mid-section>div>div>input{
+    width: 250px;
+    margin:5px 0px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  #item-details {
+    display: flex;
+  }
+  #third-mid-section > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  #second-mid-section>div>div{
+  padding:0px 30px;
+  }
+  #top-section>div{
+    text-align: center;
+  }
+  #send_div{
+    margin: 40px 0px 20px 0px;
+    width: 76%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #send_now{
+    background-color: #00b88d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  #third-mid-section>div{
+    padding: 0px 30px;
+  }

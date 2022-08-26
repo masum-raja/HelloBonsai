@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+<body>
+    <div>
+        <button>Invoice</button>
+    </div>
+    <div id="container">
+        <h1>Create an invoice</h1>
+        <hr>
+        <form action="" id="form">
+            <label for="">INVOICE TYPE</label>
+            <br>
+            <select name="" id="invoice_type">
+                <option value="">Single Invoice</option>
+                <option value="">Recurring Invoice</option>
+                <option value="">Bundled Invoice</option>
+            </select>
+            <br>
+            <label for="">CLIENT</label>
+            <br>
+            <select name="" id="invoice_client">
+                <option value="">Sample Client <br> sampleclient@hellobonsai.com</option>
+                <option value="+ New Client">+ New Client</option>
+                
+            </select>
+            <br id="br">
+            <label for="" id="project_label">PROJECT</label>
+            <br>
+            <select name="" id="invoice_project"></select>
+            <br>
+            
+            
+        </form>
+        <button onclick="generateInvoice()">Create an invoice</button>
+    </div>
+</body>
+</html>
+<script src="invoices.js"></script>
