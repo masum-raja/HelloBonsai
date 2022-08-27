@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard_page.css" />
+    <link rel="stylesheet" href="invoice.css">
   </head>
   <body>
     <div id="top">
@@ -198,6 +199,30 @@
                 <h1 id="mssg"></h1>
             </div>
         </div>
+        <div id="container">
+          <h4>Create an invoice</h4>
+          <hr>
+          <form action="" id="form2">
+              <label for="">INVOICE TYPE</label>
+              <select name="" id="invoice_type">
+                  <option value="">Single Invoice</option>
+                  <option value="">Recurring Invoice</option>
+                  <option value="">Bundled Invoice</option>
+              </select>
+              <label for="">CLIENT</label>
+              <select name="" id="invoice_client">
+                  <option value="">Sample Client <br> sampleclient@hellobonsai.com</option>
+                  <option value="+ New Client">+ New Client</option>
+              </select>
+              <label for="" id="project_label">PROJECT</label>
+              <select name="" id="invoice_project"></select> 
+          </form>
+          <hr id="buttom_line">
+          <button onclick="generateInvoice()">Create an invoice</button>
+      </div>
+        <div id="invoiceBtn">
+          <button id="invoivebtn" data-type="#container" data-toggle="modal">Invoice</button>
+        </div>
         <div id="bill">
             <table>
               <thead>
@@ -219,3 +244,4 @@
 </html>
 
 <script src="Dashboard_page.js"></script>
+<script src="invoice.js"></script>

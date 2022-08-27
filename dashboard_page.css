@@ -179,3 +179,99 @@ margin-left: 50px;
   #mssg{
     color: #4d4d4d;
   }
+
+
+  #invoiceBtn button{
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    border: none;
+    background-color: #00b289;
+    color: #ffff;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  #container{
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 550px;
+    /* position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translate(-50%,-50%) scale(0.5);
+    visibility: hidden;
+    transition: transform 0.5s,top 0.5s; */
+  }
+
+  #container h4{
+    color: #4d4d4d;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #form2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #4d4d4d;
+    outline: none;
+  }
+
+  #form2 label:first-child{
+    margin-top: 25px;
+  }
+
+  #form2 select{
+    margin-bottom: 10px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #00b289;
+    outline: none;
+  }
+
+  #form2>option{
+    border: 1px solid #00b289;
+  }
+
+  #form2 select:nth-child(4){
+    width: 320px;
+  }
+
+  #form2 select:nth-child(6){
+    width: 320px;
+  }
+  #buttom_line{
+    margin: 20px 0;
+  }
+
+  #container button{
+    background-color: #00b289;
+    border: none;
+    width: 90%;
+    margin-left: 20px;
+    height: 50px;
+    color: #ffff;
+    border-radius: 5px;
+  }
+
+  /* #container{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+    z-index: 999;
+    left: 50%;
+} */
+
+#container input{
+  outline: none;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
