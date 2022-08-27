@@ -86,6 +86,7 @@
       background-color:#fff;
       cursor: pointer;
       border-radius: 3px;
+      margin-bottom: -10px;
     }
 
     #btn_google>div {
@@ -153,7 +154,7 @@
           min-height: 45px;
           border: none;      
           border-radius: 3px;  
-          margin-bottom: 20px; 
+          margin-bottom: 0px; 
           cursor: pointer;
            }
 
@@ -202,6 +203,14 @@
       font-weight: 300;
       color: #ccd0d2;
     }
+    
+    .line{
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: -10px;
+      color: #d6dede;
+      font-size: 12px;
+     }
 
 
   </style>
@@ -249,7 +258,12 @@
               <p  style="font-size:15px;margin-top: 15px;">Sign Up with Google</p>
         </button>
 
-        <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -16px;">or</p> </div> <hr>
+        <div class="line">
+          <div> <hr style="background-color: rgb(227, 222, 222);; width: 184px;  height: 1px; border: none;"> </div>
+          &nbsp;&nbsp; <p style="margin-top:-9px ;"> or </p> &nbsp;&nbsp; 
+          <div> <hr style="background-color: rgb(227, 222, 222);; width: 184px;  height: 1px; border: none;"> </div>
+        </div>
+        <!-- <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -16px;">or</p> </div> <hr> -->
 
         <div>
           <p >EMAIL</p>
@@ -305,7 +319,12 @@
           <input type="submit" value="Create Free Account" style="color: #fff;  "/>
       </div>
 
-      <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -16px;">Already have an account?</p> </div> <hr>
+      <!-- <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -16px;">Already have an account?</p> </div> <hr> -->
+      <div class="line">
+        <div> <hr style="background-color: rgb(227, 222, 222);; width: 120px;  height: 1px; border: none;"> </div>
+        &nbsp;&nbsp; <p style="margin-top:-9px ;"> Already have an account? </p> &nbsp;&nbsp;
+        <div> <hr style="background-color: rgb(227, 222, 222);; width: 120px;  height: 1px; border: none;"> </div>
+      </div>
 
         <a class="login_div"  href="./signin.html">Login</a>
 
