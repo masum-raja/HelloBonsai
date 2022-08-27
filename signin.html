@@ -135,7 +135,9 @@
 
       hr{
         width: 290px;
-        margin-left: 10px;
+        height: 1px;
+        border: none; 
+        background-color: rgb(227, 222, 222);
       }
       
       #btn_google>img{
@@ -227,6 +229,12 @@
       text-decoration: none;
      }
 
+     .line{
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: -10px;
+      color: #d6dede;
+     }
 
 </style>
 
@@ -315,7 +323,12 @@
                         <p style="  color: #292a2d; margin: auto; margin-top: -32px; margin-bottom: 4px; margin-left: 110px; padding-bottom: 0px; ">Sign In with Google</p>
                   </div>
                    
-                  <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -9px;">or</p> </div> <hr>
+                  <div class="line">
+                    <div> <hr style="background-color: rgb(227, 222, 222);; width: 145px;  height: 1px; border: none;"> </div>
+                    &nbsp; <p style="margin-top:-9px ;"> or </p> &nbsp;
+                    <div> <hr style="background-color: rgb(227, 222, 222);; width: 145px;  height: 1px; border: none;"> </div>
+                  </div>
+                  <!-- <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -9px;">or</p> </div> <hr> -->
               
                     <input type="email" id="email" placeholder="EMAIL">
           
