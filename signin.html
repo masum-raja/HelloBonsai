@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Sign In </title>
+    <title>Sign_In Page </title>
 </head>
 
 <style>
@@ -16,10 +16,11 @@
         padding: 0;
         font-family: "Amerigo BT", sans-serif;
         /* font-family: "ProximaNova-Regular", sans-serif; */
+        box-sizing: border-box;
       }
       
    #navbars{
-       border: 1px solid ;
+    border: 1px solid rgb(222, 219, 219);
        display: flex;
        justify-content:space-between;
        margin: auto;
@@ -27,9 +28,10 @@
        font-size: 16px;
        font-weight: 500
    }
-   img{
-    width: 25%;
-    padding: 21px 15px;
+
+   #navbars>div>img{
+    width: 50%;
+    padding: 21px;
     cursor: pointer;
    }
 
@@ -39,51 +41,33 @@
    cursor: pointer;
    }
 
-   #link>a{
-    color: #6d6d6d;
-    list-style: none;
-    text-decoration: none;
-   }
-
-   .logList>a{
-    color: #6d6d6d;
-    list-style: none;
-    text-decoration: none;
-   }
-
    #container{
     display: flex;
-    border: 1px solid black;
-    width: 60%;
+    width: 55%;
     margin: auto;
     margin-top: 80px;
-    gap: 5%;
+    gap: 15%;
    }
 
    #left_div{
-    border: 1px solid black;
     width: 40%;
-    display: grid;
-    grid-template-rows: auto;
-    gap: 20px;
-    padding: 9px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 9px 10px;
+    display: inline ;
+    height: 530px;
+    border-radius: 6px;
    }
 
    .topBar{
     text-align: center;
     padding: 9px 15px;
-    padding-bottom: 0%;
-    /* border: 1px solid; */
+    padding-bottom: 5%;
+   }   
 
+   #abc{
+    margin-top: 20px;
    }
-   .left_div_footer{
-    text-align: center;
-    padding: 9px 15px;
-    padding-top: 0%;
-    /* border: 1px solid; */
-    font-size: 13px;
-    color: #666;
-   }
+
    button{
     padding: 3px 8px;
     font-size: 11px;
@@ -93,91 +77,163 @@
     border-radius: 20px;
     cursor: pointer;
    }
+
    b{
     color: #222c36;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     text-size-adjust: 100%;
-
+    margin: 0 3px;
    }
+
    span {
-    line-height: 13px;
+    font-size: 13px;
+    line-height: 19px;
     color: #666;
-    
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+   }
+
+   .left_div_footer{
+    text-align: center;
+    padding: 9px 15px;
+    padding-top: 5%;
+    font-size: 13px;
+    color: #666;
    }
 
    #right_div{
-    /* border: 1px solid rgb(132, 0, 255); */
-   
+    padding: 4%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 55%;
+    display: inline;
+    border-radius: 6px;
    }
 
-   #btn_google{
-        border: 1px solid;
-        height: 40px;
-        width: 100% ;
-        
-      }
-
-      
-      #heading{
-        margin-top: 50px; 
+   #heading{
+        margin-top: 30px; 
         text-align: center;
-        margin-bottom: 20px; 
+        margin-bottom: 40px; 
         font-size: 25px;
       }
 
-      hr{
-        width: 380px;
-      }
-
-      #btn_google>div{
-        margin: auto;
-        margin-top: -10px;
-        margin-left: 100px;
-      } 
-      #btn_google>div>img{
-        width: 8%;
-        margin: auto;
-        margin-top: -6px;
-      }
       form{
-        /* border: 1px solid; */
-        padding: 5%;
+        padding: 2%;
+        margin: auto;
       }
 
+   #btn_google{      
+        border: 2px solid;
+        width: 100%;
+        margin: auto;
+        padding: 2%;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid rgb(173, 167, 167);
+        font-size: 15px;
+      }
 
+      hr{
+        width: 290px;
+        height: 1px;
+        border: none; 
+        background-color: rgb(227, 222, 222);
+      }
+      
+      #btn_google>img{
+        width: 12%;
+        margin: auto;
+        margin-top: -3px;
+        padding-bottom: 2px;
+        margin-left: 50px;
+      }
 
+      input{
+        padding: 12px 10px 12px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid rgb(173, 167, 167);
+        margin-top: 30px;
+        font-size: 16px;
+        outline: none;
+      }
+      
+      label{
+        display: flex;
+        gap: 7px;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 90px;
+        margin-bottom: 0px;
+        font-family: proxima nova,helvetica neue,sans-serif;
+        font-weight: 600;
+        color: #292a2d;
+      }
+
+      label>input{
+        width: 14px;
+        margin-top: -4px;
+      }
+
+      #btu>input{
+        width: 100%;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        background-color: #00b289;
+        color: #fff;
+      }
+
+      #form_bottom{
+        text-align: center;
+        margin-top: 12px;
+        color: #00b289;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      
+      /* -------------  footer part  ------------- */
 
    #footer{
        width: 56%;
        margin: auto;
-       margin-top: 60px;
+       margin-top: 120px;
        text-align: center;
-       margin-bottom: 40px;
+       margin-bottom: 50px;
      }
 
      i{
-       
        margin-left: 5px;
        margin-right: 5px;
      }
+
      #footer_top{
-       
        text-align: center;
        font-size: 14px;
        line-height: 1.428571429;
        color: #929494;
        font-weight: 500;
-       
      }
+
      #footer_bottom{
        margin-top: 20px;
        font-size: 12px;
        line-height: 1.428571429;
        font-weight: 300;
        color: #ccd0d2;
+     }
+
+     a{
+      color: #929494;
+      text-decoration: none;
+     }
+
+     .line{
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: -10px;
+      color: #d6dede;
      }
 
 </style>
@@ -198,7 +254,7 @@
     </div>
 
 
-    <!-- main contain -->
+    <!-------------   main part   ------------->
 
 
     <div id="container">
@@ -206,47 +262,48 @@
         <div id="left_div">
 
             <div class="topBar">
-                <h4 class="title">The Changelog</h4>
+                <h4>The Changelog</h4>
               </div>
               <hr>
+
               <div class="logList">
 
-            <a href="#">
+            <div id="abc">
                 <button>New</button>
-                <b class="title">Automatically send your Bonsai invoices to QuickBooks Online (US only)</b>
+                <b>Automatically send your Bonsai invoices to QuickBooks Online (US only)</b>
               <span class="short">
                Keep your accounting synced between Bonsai and QuickBooks with the new QuickBooks Online...</span>
-            </a> <br><br>
+            </div> 
 
-               <a href="#">
+               <div id="abc" href="#">
                <button>New</button>
-                <b class="title">A new client forms experience.</b>
+                <b>A new client forms experience.</b>
               <span class="short">
             You can now create client forms and surveys, no matter which plan you are on. The forms also...</span>
-           </a> <br><br>
+           </div> 
 
-            <a href="#">
+            <div id="abc">
             <button>New</button>
-                <b class="title">A new client payment experience.</b>
+                <b>A new client payment experience.</b>
               <span class="short">
             In your invoice settings, you can now pick “Simplified payment page”. 
             Instead of seeing the...</span>
-        </a> <br><br>
+        </div> 
 
-             <a href="#">
+             <div id="abc">
                 <button style="background-color: #eef9f5;color: rgba(0, 0, 0, 0.7);">Improvement</button>
-                <b class="title">Drag and drop items on your invoices.</b>
+                <b>Drag and drop items on your invoices.</b>
               <span class="short"></span>
-            </a> <br><br>
+            </div> 
 
-            <a href="">
+            <div id="abc">
               <button style="background-color: #eef9f5;color: rgba(0, 0, 0, 0.7);">Improvement</button>
-                <b class="title">Updated integrations page.</b>
+                <b>Updated integrations page.</b>
               <span class="short">
             Discover all the ways you can connect Bonsai to your workflow on the new integrations page....</span>
-             </a>
+             </div>
             
-              </div>
+              </div> <br>
              <hr>
               <div class="left_div_footer">
 
@@ -256,55 +313,59 @@
         </div>
 
         <div id="right_div">
- 
-                <p id="heading" >Sign In</p>
-             
 
+                <p id="heading" >Sign In</p>
+              
               <form action="">
 
                 <div id="btn_google">
-                    <div>
                         <img src="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1" alt="">
-                             <p style="margin-top: -50px; margin-left: 50px;">Sign In with Google</p> 
-                    </div>
-                  
-                         
+                        <p style="  color: #292a2d; margin: auto; margin-top: -32px; margin-bottom: 4px; margin-left: 110px; padding-bottom: 0px; ">Sign In with Google</p>
                   </div>
                    
-                  <div  style="text-align: center;color: #878989; padding-top: 20px; padding-bottom: 20px; "> or  <hr> </div>
+                  <div class="line">
+                    <div> <hr style="background-color: rgb(227, 222, 222);; width: 145px;  height: 1px; border: none;"> </div>
+                    &nbsp; <p style="margin-top:-9px ;"> or </p> &nbsp;
+                    <div> <hr style="background-color: rgb(227, 222, 222);; width: 145px;  height: 1px; border: none;"> </div>
+                  </div>
+                  <!-- <div style="text-align: center;color: #878989; "> <p style=" margin-bottom: -9px;">or</p> </div> <hr> -->
               
-                  <div id="abc">
-                    <p>EMAIL</p>
-                    <input type="email" id="email" placeholder="your@email.com">
-                </div>
+                    <input type="email" id="email" placeholder="EMAIL">
+          
+                    <input type="password" id="password" placeholder="PASSWORD" >  
+                
 
-                <div id="abc">
-                    <p>PASSWORD</p>
-                    <input type="password" id="password" placeholder="••••••••••••" >
-                   
-                </div>
+                <label for="">
+                  <input id="box" type="checkbox" >
+                  <p>Remember me</p>   
+                </label> 
+
+                 <div id="btu">
+                  <input type="submit" value="Login">
+                </div> 
+               
+                <a href="" id="form_bottom"> <p> Reset Password</p> </a> <br>
+                <a href="" id="form_bottom"> <p> Resend Verification Email</p></a>  <br>
                 </form>
         </div>
 
     </div>
 
 
-
-
-    <!-- footer part -->
+    <!----------  footer part  ------------>
 
 
     <div id="footer">
         <div id="footer_top">
-         <a>Contact Us </a>
+         <a href="">Contact Us </a>
         <samp><i class="fa-solid fa-circle "></i> </samp> 
-         <a >Help Center </a>
+         <a href="">Help Center </a>
          <samp><i class="fa-solid fa-circle "></i> </samp> 
-         <a>About Us</a>
+         <a href="">About Us</a>
          <samp><i class="fa-solid fa-circle "></i> </samp> 
-         <a>Plans & Pricing</a>
+         <a href="">Plans & Pricing</a>
          <samp><i class="fa-solid fa-circle "></i> </samp> 
-         <a>Privacy policy</a>
+         <a href="">Privacy policy</a>
         </div>
  
         <div id="footer_bottom">
@@ -320,7 +381,8 @@
 </body>
 </html>
 
-<script>
-  
-</script>
+<script src="signin.js"></script>
+
+
+
 
