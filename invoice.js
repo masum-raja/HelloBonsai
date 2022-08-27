@@ -72,3 +72,9 @@ function generateInvoice(){
     localStorage.setItem("invoice_details",JSON.stringify(invoice_details))
     window.location.href="invoiceedit.html"
 }
+
+
+invoicepop=()=>{
+    document.querySelector("#invoice_pop").href="invoice_pop.css"
+}
+

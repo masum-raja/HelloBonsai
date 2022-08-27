@@ -197,13 +197,15 @@ margin-left: 50px;
     width: 40%;
     margin: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    height: 550px;
-    /* position: absolute;
+    height: 500px;
+    position: absolute;
     top: 0;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%,-50%) scale(0.5);
     visibility: hidden;
-    transition: transform 0.5s,top 0.5s; */
+    transition: transform 0.5s,top 0.5s;
+    background-color: white;
+    z-index: 999;
   }
 
   #container h4{
@@ -260,15 +262,7 @@ margin-left: 50px;
     color: #ffff;
     border-radius: 5px;
   }
-
-  /* #container{
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-    visibility: visible;
-    z-index: 999;
-    left: 50%;
-} */
-
+  
 #container input{
   outline: none;
   height: 30px;
