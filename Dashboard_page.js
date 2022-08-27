@@ -178,3 +178,4 @@ delRow=(i)=>{
     localStorage.setItem("details",JSON.stringify(arr))
     displayProject(arr)
 }
+
