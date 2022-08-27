@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+    src="https://kit.fontawesome.com/75fa0c7550.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="chatbot.css">
+    <title>ChatBot</title>
+    
+  </head>
+  <body>
+    <div class="chat_collapse">
+      <button id="chat_btn" class="collapsible" onclick="popupstart()">Chat with us!</button>
+      <div id="content">
+        <div id="chat_block">
+          <div class="outer_container">
+            <div class="chat_container">
+              <div id="content">
+                <div id="chat_block1">
+                  <div id="date"></div>
+                  <div id="container" style="padding-left: 15px; padding-right: 15px;">
+                    <p id="greeting">
+                      Hello, How are you! <br />
+                      How may i help you?
+                    </p>
+                    <div id="divfirst"></div>
+                  </div>
+
+                  <div style="padding-left: 15px; padding-bottom:10px ;">
+                    <input type="text" id="response" />
+                    <button id="sendbtn" onclick="sendbtn()">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="chatbot.js"></script>
