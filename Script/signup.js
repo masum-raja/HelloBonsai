@@ -20,7 +20,7 @@ function signup(event){
       SignUpdata.push(data);
     localStorage.setItem("Bonsai_signup_data",JSON.stringify(SignUpdata));
 
-    window.location.href="signin.html";
+    window.location.href="signin_page.html";
     }
 
 }

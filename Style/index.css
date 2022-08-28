@@ -414,8 +414,6 @@ hr{
 
  /* green div */
  #ctadiv{
-   position: relative;
-    z-index: 1;
     padding: 3rem 2rem;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;

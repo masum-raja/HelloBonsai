@@ -23,8 +23,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 let data = JSON.parse(localStorage.getItem("Bonsai_signup_data"))||[]
-
-// console.log()
+console.log(data)
 
 let sender_name = document.getElementById("sender-name");
 sender_name.value = data[0].personName;
@@ -65,7 +64,6 @@ function calculatetotal() {
     "total-amount"
   ).innerText = `₹${total_invoice_amount}`;
 }
-
 calculatetotal();
 
 
