@@ -23,7 +23,7 @@ function signin(event){
   if (flag===true) {
     signIndata.push(data);
     localStorage.setItem("Bonsai_sigin_data",JSON.stringify(signIndata));
-    window.location.href="homepage.html";
+    window.location.href="index.html";
   }else{
     alert("Please Check your Email or Password");
   }

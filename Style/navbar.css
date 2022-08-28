@@ -4,6 +4,14 @@
   box-sizing: border-box;
   font-family: "popins", sans-serif;
 }
+
+#navbar{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 4;
+  padding-bottom: 20px;
+}
  
 nav {
   display: flex;
@@ -11,10 +19,6 @@ nav {
   align-items: center;
   height: 60px;
   padding-top: 20px;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 4;
 }
 
 nav > div:first-child img {
@@ -170,57 +174,50 @@ nav button:last-child:hover {
   padding: 0 20px;
 }
 
-.mobile_nav_btn{
-  display: none;
-  background: transparent;
+
+.container {
+  display: inline-block;
   cursor: pointer;
-}
-
-.mobile-icon{
-  width: 40px;
-  height: 40px;
-  color: #4c4d5f;
-}
-
-.mobile-icon[name="close-outline"]{
-display: none;
-}
-
-
-#das{
   display: none;
 }
 
-
-@media(max-width:1000px){
-
-  .mobile-icon{
-    display: block;
-=======
-.header{
-  display: none;
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-#mobile_nav{
-display: none;
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#dasBtn{
+  /* display: none; */
+}
 
 @media(max-width:1000px){
-  #dropdown,#btn{
-    opacity: 0;
-    visibility: hidden;
-
-  }
-
-  .mobile_nav_btn{
-    display: block;
-    z-index: 999;
-    right: 0;
-  }
-
   #btn,#dropdown{
     opacity: 0;
     visibility: hidden;
   }
+
+  .container {
+    display: block;
+    margin-right: 30px;
+  }
+  /* #dasBtn{
+    display: none;
+  } */
 }
