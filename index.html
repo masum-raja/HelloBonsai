@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/footer.css">
 </head>
 <body>
-     <div id="navbar"></div>
-
+     <div id="navbar">
+     </div>
      <!-- first div start from here -->
 
     <div id="upperblock">
@@ -74,43 +74,49 @@
                              <div class="btncontent"><h4>Proposals</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
+                        <hr>
 
                         <div class="btnflex" id="imagetwoo2">
                             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7ce5e2feb667_icon%202.svg" alt="">
                              <div class="btncontent"><h4>Contracts</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
+                        <hr>
 
                         <div class="btnflex" id="imagetwoo3">
                             <img  style="width:25px" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e63a76751beefc0cac1d2ee_projects.svg" alt="">
                              <div class="btncontent"><h4>Client CRM</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
+                        <hr>
 
                         <div class="btnflex" id="imagetwoo4">
                             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c6fccfeb664_icon%204.svg" alt="">
                              <div class="btncontent"><h4>Time Tracking</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
+                        <hr>
 
                         <div class="btnflex" id="imagetwoo5">
                             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cc211feb68d_icon%205.svg" alt="">
                              <div class="btncontent"><h4>Invoices</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
+                        <hr>
 
                         <div class="btnflex"id="imagetwoo6">
                             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c852bfeb68c_icon%206.svg" alt="">
                              <div class="btncontent"><h4>Task Tracking</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
+                        <hr>
 
                         <div class="btnflex" id="imagetwoo7">
                             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cee21feb676_icon%207.svg" alt="">
                              <div class="btncontent"><h4>Accounting & Taxes</h4></div>
                              <img class="imagetwoo" src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c042dfeb68b_Path.svg" alt="">
                         </div>
-
+                        <hr>
                         <div class="btnflex" id="imagetwoo8">
                             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e72bbe6e8264bb7bbfe4820_dark-forms.svg" alt="">
                              <div class="btncontent"><h4>Forms</h4></div>
@@ -234,10 +240,21 @@
 </body>
 </html>
 <script type="module">
-    import {navbar,footer} from "./navbar_footer.js";
+    import {navbar,footer} from "./Script/navbar_footer.js";
     document.getElementById('navbar').innerHTML=navbar();
 
     document.getElementById('footerbox').innerHTML=footer();
 
+    let data= JSON.parse(localStorage.getItem("Bonsai_sigin_data"))||[]
+
+if(data.length==1){
+  document.getElementById("dasBtn").style.display="block"
+  document.getElementById("btn").style.display="none"
+}else if(data==null){
+  document.getElementById("dasBtn").style.display="none"
+  document.getElementById("btn").style.display="block"
+}
 </script>
-<script src="index.js">  </script>
+
+<script src="./Script/index.js"> </script>
+<script src="./Script/common.js"></script>

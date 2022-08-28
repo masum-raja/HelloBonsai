@@ -1,11 +1,12 @@
 let navbar = ()=>{
     return `    <nav>
     <div id="logo">
-      <img
-        src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
+    <a href="index.html"
+      ><img
+        src="https://app.hellobonsai.com/packs/static/bonsai-623ed86a47a195e7f9e2.svg"
         alt=""
-      />
-    </div>
+    /></a>
+  </div>
 
     <div id="dropdown">
       <ul>
@@ -83,15 +84,22 @@ let navbar = ()=>{
             </li>
           </ul>
         </li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Reviews</a></li>
+        <li><a href="./pricing_page.html">Pricing</a></li>
+        <li><a href="./reviews.html">Reviews</a></li>
       </ul>
     </div>
 
     <div id="btn">
-      <button>LOG IN</button>
-      <button>START FREE</button>
+      <button onclick="login()" >LOG IN</button>
+      <button onclick="signup()">START FREE</button>
     </div>
+    <div id="dasBtn"> <button onclick="DasBtn()">Dasboard</button></div>
+
+  <div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
   </nav>`
 }
 
@@ -149,5 +157,6 @@ let footer=()=>{
   </div>
 </div>`
 }
+
 
 export {navbar,footer}

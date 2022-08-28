@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<link rel="stylesheet" href="./Style/navbar.css">
+<link rel="stylesheet" href="./Style/footer.css">
     <link
       href="//db.onlinewebfonts.com/c/0376a58122a881d16a294512d3c947b1?family=ProximaNova-Regular"
       rel="stylesheet"
@@ -15,10 +16,11 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="./Style/reviews.css" />
     <title>Reviews</title>
   </head>
   <body>
+    <div id="navbar"></div>
     <div class="top-section">
       <h1>Bonsai Reviews</h1>
       <h3>200,000+ Freelancers Love Bonsai. Here's why.</h3>
@@ -674,5 +676,25 @@
         </div>
       </div>
     </div>
+
+    <div id="footerbox"></div>
   </body>
 </html>
+<script type="module">
+  import {navbar,footer} from "./Script/navbar_footer.js";
+  document.getElementById('navbar').innerHTML=navbar();
+
+  document.getElementById('footerbox').innerHTML=footer();
+
+  let data= JSON.parse(localStorage.getItem("Bonsai_sigin_data"))||[]
+
+if(data.length==1){
+document.getElementById("dasBtn").style.display="block"
+document.getElementById("btn").style.display="none"
+}else if(data==null){
+document.getElementById("dasBtn").style.display="none"
+document.getElementById("btn").style.display="block"
+}
+</script>
+
+<script src="./Script/common.js"></script>

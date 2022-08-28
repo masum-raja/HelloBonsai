@@ -16,9 +16,9 @@ let switchb=document.querySelector("#buttonk")
      switchb.onchange = function(){
         this.classList.toggle("active");
         var panel=document.querySelector(".yearly_part")
-        var panel1=document.querySelector("#mid_part1_2")
+        var panel1=document.querySelector("#main_2")
         var mon=document.querySelector(".card_part")
-        var mon1=document.querySelector("#mid_part")
+        var mon1=document.querySelector("#main_1")
         if (mon.style.display === "none" && mon1.style.display==="none") {
             mon.style.display = "grid";
             panel.style.display="none"

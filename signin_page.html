@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Sign In </title>
+</head>
+
+<style>
+ 
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: "Amerigo BT", sans-serif;
+      /* font-family: "ProximaNova-Regular", sans-serif; */
+      box-sizing: border-box;
+    }
+    
+ #navbars{
+  border: 1px solid rgb(222, 219, 219);
+     display: flex;
+     justify-content:space-between;
+     margin: auto;
+     height: 70px;
+     font-size: 16px;
+     font-weight: 500
+ }
+
+ #navbars>div>img{
+  width: 50%;
+  padding: 21px;
+  cursor: pointer;
+ }
+
+ #link{
+  text-align: center;
+ padding: 21px 15px;
+ cursor: pointer;
+ }
+
+ #container{
+  display: flex;
+  width: 55%;
+  margin: auto;
+  margin-top: 80px;
+  gap: 15%;
+ }
+
+ #left_div{
+  width: 40%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 9px 10px;
+  display: inline;
+  height: 580px;
+  border-radius: 6px;
+ }
+
+ .topBar{
+  text-align: center;
+  padding: 9px 15px;
+  padding-bottom: 5%;
+ }   
+
+ #abc{
+  margin-top: 20px;
+ }
+
+ button{
+  padding: 3px 8px;
+  font-size: 11px;
+  border: none;
+  background-color: #00b289;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+ }
+
+ b{
+  color: #222c36;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  text-size-adjust: 100%;
+  margin: 0 3px;
+ }
+
+ span {
+  font-size: 13px;
+  line-height: 19px;
+  color: #666;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+ }
+
+ .left_div_footer{
+  text-align: center;
+  padding: 9px 15px;
+  padding-top: 5%;
+  font-size: 13px;
+  color: #666;
+ }
+
+ #right_div{
+  padding: 4%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 55%;
+  display: inline;
+  border-radius: 6px;
+ }
+
+ #heading{
+      margin-top: 30px; 
+      text-align: center;
+      margin-bottom: 40px; 
+      font-size: 25px;
+    }
+
+    form{
+      padding: 2%;
+      margin: auto;
+    }
+
+ #btn_google{      
+      border: 2px solid;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid rgb(173, 167, 167);
+      font-size: 15px;
+      padding: 10px 0;
+    }
+
+    hr{
+      width: 250px;
+      margin-left: 10px;
+    }
+    
+    #btn_google>img{
+      width: 12%;
+      margin: auto;
+      margin-top: -3px;
+      padding-bottom: 2px;
+      margin-left: 50px;
+    }
+
+    input{
+      padding: 12px 10px 12px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid rgb(173, 167, 167);
+      margin-top: 30px;
+      font-size: 16px;
+      outline: none;
+    }
+    
+    label{
+      display: flex;
+      gap: 7px;
+      margin-top: 30px;
+      text-align: center;
+      margin-left: 90px;
+      margin-bottom: 0px;
+      font-family: proxima nova,helvetica neue,sans-serif;
+      font-weight: 600;
+      color: #292a2d;
+    }
+
+    label>input{
+      width: 14px;
+      margin-top: -4px;
+    }
+
+    #btu>input{
+      width: 100%;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      background-color: #00b289;
+      color: #fff;
+    }
+
+    #form_bottom{
+      text-align: center;
+      margin-top: 12px;
+      color: #00b289;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    
+    /* -------------  footer part  ------------- */
+
+ #footer{
+     width: 56%;
+     margin: auto;
+     margin-top: 120px;
+     text-align: center;
+     margin-bottom: 50px;
+   }
+
+   i{
+     margin-left: 5px;
+     margin-right: 5px;
+   }
+
+   #footer_top{
+     text-align: center;
+     font-size: 14px;
+     line-height: 1.428571429;
+     color: #929494;
+     font-weight: 500;
+   }
+
+   #footer_bottom{
+     margin-top: 20px;
+     font-size: 12px;
+     line-height: 1.428571429;
+     font-weight: 300;
+     color: #ccd0d2;
+   }
+
+   a{
+    color: #929494;
+    text-decoration: none;
+   }
+
+   .line{
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: -10px;
+      color: #D6DEDE;
+     }
+
+     .line p{
+      margin-left: 10px;
+     }
+
+
+</style>
+
+<body>
+  
+  <div id="navbars">
+      <div>
+          <img src="https://app.hellobonsai.com/assets/logo-icon-6263c52498bd8749917ac337dfcb797432a7d3df25bc04e1a5ce2b0e7451268e.png" alt="">
+      </div>
+     
+     
+      <div id="link">
+          <a  href="signin_page.html">Login</a>  &nbsp;  &nbsp;&nbsp;
+          <a  href="signup_page.html">Sign Up</a>
+      </div>
+      
+  </div>
+
+
+  <!-------------   main part   ------------->
+
+
+  <div id="container">
+
+      <div id="left_div">
+
+          <div class="topBar">
+              <h4>The Changelog</h4>
+            </div>
+            <hr>
+
+            <div class="logList">
+
+          <div id="abc">
+              <button>New</button>
+              <b>Automatically send your Bonsai invoices to QuickBooks Online (US only)</b>
+            <span class="short">
+             Keep your accounting synced between Bonsai and QuickBooks with the new QuickBooks Online...</span>
+          </div> 
+
+             <div id="abc" href="#">
+             <button>New</button>
+              <b>A new client forms experience.</b>
+            <span class="short">
+          You can now create client forms and surveys, no matter which plan you are on. The forms also...</span>
+         </div> 
+
+          <div id="abc">
+          <button>New</button>
+              <b>A new client payment experience.</b>
+            <span class="short">
+          In your invoice settings, you can now pick “Simplified payment page”. 
+          Instead of seeing the...</span>
+      </div> 
+
+           <div id="abc">
+              <button style="background-color: #eef9f5;color: rgba(0, 0, 0, 0.7);">Improvement</button>
+              <b>Drag and drop items on your invoices.</b>
+            <span class="short"></span>
+          </div> 
+
+          <div id="abc">
+            <button style="background-color: #eef9f5;color: rgba(0, 0, 0, 0.7);">Improvement</button>
+              <b>Updated integrations page.</b>
+            <span class="short">
+          Discover all the ways you can connect Bonsai to your workflow on the new integrations page....</span>
+           </div>
+          
+            </div> <br>
+           <hr>
+            <div class="left_div_footer">
+
+              <a style="color: #666;; " target="_blank"  href="https://headwayapp.co/bonsai-updates?utm_medium=widget">Bonsai updates</a>
+                powered by <a style="color: #666; "  target="_blank" href="https://headwayapp.co?utm_medium=widget&amp;utm_source=bonsai" >Headway</a>
+            </div>
+      </div>
+
+      <div id="right_div">
+
+              <p id="heading" >Sign In</p>
+            
+            <form action="">
+
+              <div id="btn_google">
+                      <img src="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1" alt="">
+                      <p style="  color: #292a2d; margin: auto; margin-top: -32px; margin-bottom: 4px; margin-left: 110px; padding-bottom: 0px; ">Sign In with Google</p>
+                </div>
+                 
+                <div class="line">
+                  <div> <hr style="background-color: rgb(227, 222, 222);; width: 120px;  height: 1px; border: none;"> </div>
+                  <p style="margin-top:-9px ;"> or </p>
+                  <div> <hr style="background-color: rgb(227, 222, 222);; width: 120px;  height: 1px; border: none;"> </div>
+                </div>
+            
+                  <input type="email" id="email" placeholder="EMAIL">
+        
+                  <input type="password" id="password" placeholder="PASSWORD" >  
+              
+
+              <label for="">
+                <input id="box" type="checkbox" >
+                <p>Remember me</p>   
+              </label> 
+
+               <div id="btu">
+                <input type="submit" value="Login">
+              </div> 
+             
+              <a href="" id="form_bottom"> <p> Reset Password</p> </a> <br>
+              <a href="" id="form_bottom"> <p> Resend Verification Email</p></a>  <br>
+              </form>
+      </div>
+
+  </div>
+
+
+  <!----------  footer part  ------------>
+
+
+  <div id="footer">
+      <div id="footer_top">
+       <a href="">Contact Us </a>
+      <samp><i class="fa-solid fa-circle "></i> </samp> 
+       <a href="">Help Center </a>
+       <samp><i class="fa-solid fa-circle "></i> </samp> 
+       <a href="">About Us</a>
+       <samp><i class="fa-solid fa-circle "></i> </samp> 
+       <a href="">Plans & Pricing</a>
+       <samp><i class="fa-solid fa-circle "></i> </samp> 
+       <a href="">Privacy policy</a>
+      </div>
+
+      <div id="footer_bottom">
+       <div>
+         ©2022 Bonsai Technologies Inc — Payments, banking, and issuing services are provided by 
+         <a style="color: #ccd0d2; " target="_blank" href="https://www.stripe.com">Stripe Payments Company</a>, Evolve Bank &amp; Trust (Member FDIC), and Celtic Bank (Member FDIC), respectively. Bonsai is not a law firm, and does not provide legal services, advice, or representation.&nbsp;&nbsp;
+         <a style="color: #ccd0d2;" href="https://app.hellobonsai.com/terms">Terms</a>
+         &nbsp;&nbsp;
+         <a style="color: #ccd0d2;" href="https://www.hellobonsai.com/credits">Credits</a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
+
+<script src="./Script/signin.js"></script>

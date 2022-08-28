@@ -1,3 +1,20 @@
+var myDate = new Date();
+
+let daysList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let monthsList = ['January', 'Februaryeb', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+
+let date = myDate.getDate();
+let month = monthsList[myDate.getMonth()];
+let year = myDate.getFullYear();
+let day = daysList[myDate.getDay()];
+let month_due = monthsList[(myDate.getMonth())+1];
+
+let today = `${date}th, ${month}, ${year}`;
+let Due_today = `${date}th, ${month_due}, ${year}`;
+
+
+
 let invoice_details = JSON.parse(localStorage.getItem("invoice_details"));
 let arr = JSON.parse(localStorage.getItem("details")) || [];
 let invoice_project = invoice_details.invoice_project;
@@ -5,26 +22,22 @@ for (let i = 0; i < arr.length; i++) {
   if (arr[i].project == invoice_project) var project_data = arr[i];
 }
 
-// let data = JSON.parse(localStorage.getItem("data"))
-let data = {
-  name: "Mayank Gupta",
-  email: "mayankmk22@gmail.com",
-};
+let data = JSON.parse(localStorage.getItem("Bonsai_signup_data"))||[]
+
+// console.log()
+
 let sender_name = document.getElementById("sender-name");
-sender_name.value = data.name;
+sender_name.value = data[0].personName;
 
-// let sender_company = document.getElementById("sender-company");
-// sender_company.value = "Your Company";
 
-document.getElementById("sender-email").innerText = data.email;
-// document.getElementById("invoice_name").innerText = `${invoice_details.client_name} Invoice`;
+document.getElementById("sender-email").innerText = data[0].personEmail;
 let num = Math.ceil(1000 + Math.random());
 document.getElementById("invoice_num").innerText = `Invoice #${num}`;
 
 document
   .getElementById("sender-date")
-  .append((document.createElement("h4").innerText = "Aug 26, 2022"));
-document.getElementById("due-date").innerText = "Aug 28,2022";
+  .append((document.createElement("h4").innerText = today));
+document.getElementById("due-date").innerText = Due_today;
 
 document.getElementById("client-name").value = invoice_details.client_name;
 document.getElementById("item-name").value = invoice_details.project_name;
@@ -44,8 +57,7 @@ function calculatetotal() {
   let tax_value = (tax / 100) * total_price;
   let total_invoice_amount = tax_value + total_price;
 
-  // let show_tax = document.getElementById("total-tax")
-  // show_tax.innerText = `₹${tax_value}`
+
   document.getElementById("total").innerText = `₹${total_price}`;
   document.getElementById("subtotal").innerText = `₹${total_price}`;
   document.getElementById("total-tax").innerText = `₹${tax_value}`;

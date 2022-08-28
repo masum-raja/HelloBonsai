@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #upperblock{
     width: 100%;
     
@@ -221,20 +222,22 @@
  #mainbtn{
     width: 60%;
     height: 600px;
-    
     margin-left: 20%;
  }
  .btnflex{
     display: flex;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
     padding: 20px; 
     border-radius: 5px;
     color: #4c525a;
  }
+hr{
+  border: 1px solid rgb(223, 221, 221);
+}
 
  .btnflex:hover{
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
     padding: 20px; 
  }
 
@@ -424,7 +427,6 @@
     -webkit-box-align: center;
     border-radius: 8px;
     background-color: #f2faff;
-    
     height: 200px;
     width: 80%;
     margin: auto;
@@ -434,19 +436,16 @@
  #flexleft{
    width: 70%;
    text-align: center;
-   /* border: 1px solid red; */
    margin: auto;
    height: 100%;
    display: flex;
    justify-content: space-between;
-   
  }
  #lasttext{
    font-family: 'Amerigo-bt roman opt';
    margin-top: 0;
    margin-bottom: 0;
-   font-size: 2.75rem;
-   line-height: 130%;
+   font-size: 2.35rem;
    text-align: center;
    color: #4c525a;
    font-weight: 400;
@@ -477,7 +476,9 @@
 #margin{
    margin-top: 200px;
 }
-
+#dasBtn{
+  display: none;
+}
 
 /* responsiveness */
 
@@ -590,6 +591,10 @@ width: 100%;
    text-align: center;
    padding-bottom:40px;
  }
+
+ hr{
+  visibility: hidden;
+ }
 }
 
 
@@ -600,6 +605,10 @@ width: 100%;
      width: 120px;
      border-radius: 5px;
      
+ }
+
+ hr{
+  visibility: hidden;
  }
  #startfree{
      border: 3px solid #00b289;
