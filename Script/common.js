@@ -3,11 +3,11 @@ function myFunction(x) {
   }
   
   login=()=>{
-    window.location.href="signin.html"
+    window.location.href="signin_page.html"
   }
 
   signup=()=>{
-    window.location.href="signup.html"
+    window.location.href="signup_page.html"
   }
 
   DasBtn=()=>{

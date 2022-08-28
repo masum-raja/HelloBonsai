@@ -84,7 +84,7 @@ let navbar = ()=>{
             </li>
           </ul>
         </li>
-        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./pricing_page.html">Pricing</a></li>
         <li><a href="./reviews.html">Reviews</a></li>
       </ul>
     </div>
