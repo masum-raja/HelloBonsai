@@ -6,7 +6,6 @@
 
 #upperblock{
     width: 100%;
-    
 }
 #uppersubblock{
     display: flex;
@@ -15,8 +14,6 @@
     /* border: 1px solid red; */
 }
 #shapeblue{
-    
-    /* top: -88%; */
   
     width: 90vw;
     height: 80vw;
@@ -593,6 +590,10 @@ width: 100%;
  hr{
   visibility: hidden;
  }
+
+ .chat_collapse{
+  display: none;
+}
 }
 
 
@@ -871,6 +872,10 @@ width: 40%;
 
 #flexleft>a{
    margin-top: 60px;
+}
+
+.chat_collapse{
+  display: none;
 }
 
  }

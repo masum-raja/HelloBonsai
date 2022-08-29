@@ -15,24 +15,27 @@ document.getElementById("day").innerHTML=today
 
 let currentTime=myDate.getHours()
 
-let name="masum!"
+let name_data=JSON.parse(localStorage.getItem("Bonsai_signup_data"))
+name_data=name_data[0].personName
+// console.log(name_data[0])
+
 if(currentTime >= 12 && currentTime < 17){
      let mssg=document.getElementById("mssg")
-     mssg.innerText=`Good afternoon ${name}`
+     mssg.innerText=`Good afternoon ${name_data}`
      let image=document.getElementById("img");
      let img=document.createElement("img");
      img.src="https://app.hellobonsai.com/packs/static/good-afternoon-b0990cefb6300b05f216.svg"
      image.append(img)
 }else if(17 <= currentTime && currentTime <= 23){
   let mssg=document.getElementById("mssg")
-  mssg.innerText=`Good evening ${name}`
+  mssg.innerText=`Good evening ${name_data}`
   let image=document.getElementById("img");
   let img=document.createElement("img");
   img.src="https://app.hellobonsai.com/packs/static/good-night-b72f77cf9b08b00ddf6b.svg"
   image.append(img)
 }else{
   let mssg=document.getElementById("mssg")
-  mssg.innerText=`Good morning ${name}`
+  mssg.innerText=`Good morning ${name_data}`
   let image=document.getElementById("img");
   let img=document.createElement("img");
   img.src="https://app.hellobonsai.com/packs/static/good-morning-66f0f5841376d77563ac.svg"
