@@ -93,7 +93,7 @@ let navbar = ()=>{
       <button onclick="login()" >LOG IN</button>
       <button onclick="signup()">START FREE</button>
     </div>
-    <div id="dasBtn"> <button onclick="DasBtn()">Dasboard</button></div>
+    <div id="dasBtn"> <button onclick="DasBtn()">Dashboard</button></div>
 
   <div class="container" onclick="myFunction(this)">
   <div class="bar1"></div>
